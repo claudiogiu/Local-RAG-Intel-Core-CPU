@@ -1,0 +1,1 @@
+"""Public API for core orchestration components coordinating embedding, retrieval, and generation."""

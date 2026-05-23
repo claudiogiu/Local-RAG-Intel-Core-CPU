@@ -1,0 +1,25 @@
+[project]
+name = "Local-RAG-Intel-Core-CPU"
+version = "0.1.0"
+description = "A local Retrieval-Augmented-Generation pipeline integrating Ollama and Qdrant, intended for execution on CPU architectures."
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "httpx>=0.27",
+    "qdrant-client>=1.8",
+    "datasets>=2.19",
+    "huggingface_hub>=0.23",
+    "openai>=1.0",
+    "numpy>=2.0",
+    "pydantic>=2.0",
+    "rich>=13.0",
+    "tqdm>=4.0"
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "ruff"
+]
