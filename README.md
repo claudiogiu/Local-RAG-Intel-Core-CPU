@@ -1,7 +1,7 @@
 # Local RAG on Intel® Core™ CPUs via Ollama and Qdrant
 ## Introduction  
 
-This repository is designed for deploying a fully local retrieval‑augmented generation system that operates on Intel® Core™ processors by adopting Ollama as the small‑language‑model runtime and Qdrant as the vector‑database component, integrating ingestion, embedding, storage, retrieval and generation within a unified environment that preserves data locality and supports controlled execution on CPU‑based hardware.
+This repository is designed for deploying an entirely local retrieval‑augmented generation system that operates on Intel® Core™ processors by adopting Ollama as the small‑language‑model runtime and Qdrant as the vector‑database component, integrating ingestion, embedding, storage, retrieval and generation within a unified environment that preserves data locality and supports controlled execution on CPU‑based hardware.
 
 Ollama provides the local execution engine for the small language models used for embedding generation and text generation, while Qdrant offers the vector‑database capabilities required to store high‑dimensional embeddings and execute efficient similarity searches over the indexed corpus. 
 
@@ -19,11 +19,11 @@ To set up the repository properly, follow these steps:
 
 - Assign valid values to all required variables.
 
-**2.** **Execute the Service Initialization with Makefile**  
+**2.** **Execute the Service Provisioning with Makefile**  
 
 - The repository includes a **Makefile** that automates the initialization of all components required to run the local RAG system.
 
-- Run the following command to start the complete stack:
+- Run the following command to start the complete service suite:
 
   ```bash
   make all
@@ -32,8 +32,8 @@ To set up the repository properly, follow these steps:
 - This command sequentially performs the following operations:
 
   - Starts all required services using Docker Compose, ensuring that the API, the vector database and the model runtime are correctly instantiated.
-  - Interprets the model identifiers provided through the environment variables `OLLAMA_EMBED_MODEL` and `OLLAMA_CHAT_MODEL`, which respectively specify the embedding model used for vector generation and the generation model used for producing textual outputs.
-  - Downloads the specified models from Ollama, ensuring that the embedding model is available for vector generation and that the generation model is available for text generation and RAG‑related operations.
+  - Interprets the model identifiers provided through the environment variables `OLLAMA_EMBED_MODEL` and `OLLAMA_CHAT_MODEL`, which respectively specify the embedding model used for vector derivation and the generation model used for producing textual outputs.
+  - Downloads the specified models from Ollama, ensuring that the embedding model is available for vector derivation and that the generation model is available for text production within RAG workflow.
 
 **3.** **Access the API** 
   
