@@ -35,7 +35,7 @@ class Loader:
             f"Loading HuggingFace dataset '{self.dataset_name}' with subset '{self.dataset_subset}'."
         )
 
-        dataset = load_dataset(self.dataset_name, self.dataset_subset, split="train[:4]")
+        dataset = load_dataset(self.dataset_name, self.dataset_subset, split="train")
 
         logger.info(f"Dataset loaded with {len(dataset)} entries.")
 
