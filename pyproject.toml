@@ -1,7 +1,7 @@
 [project]
 name = "Local-RAG-Intel-Core-CPU"
 version = "0.1.0"
-description = "A local Retrieval-Augmented-Generation pipeline integrating Ollama and Qdrant, intended for execution on CPU architectures."
+description = "A local Retrieval-Augmented Generation pipeline integrating Ollama and Qdrant, intended for execution on CPU architectures."
 requires-python = ">=3.12"
 
 dependencies = [
